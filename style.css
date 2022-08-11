@@ -29,3 +29,15 @@
     text-decoration: none;
 }
 
+.contact .container h2{
+    text-align: center;
+}
+.contact .container .info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .container .info .left i{
+    font-size: 2em;
+    margin-left: .7em;
+}
