@@ -13,7 +13,7 @@ function showData(data) {
     console.log("hola");
     cardPetition.innerHTML += `
       <tr>
-        <th scope="row">${index}</th>
+        <th scope="row">${index + 1}</th>
         <td>${user.name}</td>
         <td>${user.username}</td>
         <td>${user.email}</td>
