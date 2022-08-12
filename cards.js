@@ -10,16 +10,16 @@ const cardPetition =document.getElementById('fetch-petition');
         console.log(data.results);
         data.results.map((character) => {
             cardPetition.innerHTML += `
-                <div class="card col-3 mx-1 my-1 shadow" style="border: 5px solid #198754; border-radius: 15px; background-color: #ffc107">
+                <div class="card col-3 mx-1 my-5" style="color: #1e751d ; border: 5px solid #29bd27; border-radius: 15px; background-color: #56e954; hover:zoom">
                     <div class="card-body">
                         <img src=${character.image} class="card-img-top" alt=${character.name}>
                         <h2 style="text-align:center">${character.name}</h2>
-                        <h5 class="card-title"><b>Especie:</b> ${character.species}</h5>
-                        <h5 class="card-title"><b>Estado:</b> ${character.status}</h5>
+                        <h5 class="card-title"><span> Especie:</span> ${character.species}</h5>
+                        <h5 class="card-title"><span> Estado:</span> ${character.status}</h5>
                         <h5 class="card-title">${character.type}</h5>
-                        <h5 class="card-title"><b>Género:</b> ${character.gender}</h5>
-                        <h5 class="card-title"><b>Ubicación:</b> ${character.location.name}</h5>
-                        <h5 class="card-title"><b>Origen:</b> ${character.origin.name}</h5>
+                        <h5 class="card-title"><span> Género:</span> ${character.gender}</h5>
+                        <h5 class="card-title"><span> Ubicación:</span> ${character.location.name}</h5>
+                        <h5 class="card-title"><span> Origen:</span> ${character.origin.name}</h5>
    
                     </div>
                 </div>   
